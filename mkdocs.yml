@@ -1,3 +1,35 @@
-site_name: My Docs
+site_name: AZ-104 Notes
+repo_url: https://github.com/imdeepmind/az-104
+edit_uri: https://github.com/imdeepmind/az-104/tree/main
+
+site_description: Notes for AZ-104 - Microsoft Azure Administrator exam
+site_author: Abhishek Chatterjee
+
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  social:
+    - icon: simple/twitter
+      link: https://twitter.com/@imdeepmind
+    - icon: simple/linkedin
+      link: https://linkedin.com/in/imdeepmind
+    - icon: simple/github
+      link: https://github.com/imdeepmind
