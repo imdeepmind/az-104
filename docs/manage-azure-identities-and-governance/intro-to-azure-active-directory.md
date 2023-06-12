@@ -50,3 +50,15 @@ To enhance your Azure AD implementation, you can also add paid features by upgra
 - Select Next: Review + Create. Review the information you entered and if the information is correct, select create.
 
 Your new tenant is created with the domain contoso.onmicrosoft.com.
+
+## Adding custom domain to Azure AD
+
+- Sign in to the Azure portal using a Global administrator account for the directory.
+
+- Search for and select Azure Active Directory from any page. Then select Custom domain names > Add custom domain. ![image](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/media/add-custom-domain/add-custom-domain.png)
+
+- In Custom domain name, enter your organization's new name, in this example, contoso.com. Select Add domain. ![image](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/media/add-custom-domain/add-custom-domain-blade.png)
+
+The unverified domain is added. The contoso.com page appears showing your DNS information. Save this information. You need it later to create a TXT record to configure DNS.
+
+![image](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/media/add-custom-domain/contoso-blade-with-dns-info.png)
