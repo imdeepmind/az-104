@@ -62,3 +62,59 @@ Your new tenant is created with the domain contoso.onmicrosoft.com.
 The unverified domain is added. The contoso.com page appears showing your DNS information. Save this information. You need it later to create a TXT record to configure DNS.
 
 ![image](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/media/add-custom-domain/contoso-blade-with-dns-info.png)
+
+
+## What is identity and access management (IAM)?
+
+Identity and access management ensures that the right people, machines, and software components get access to the right resources at the right time. First, the person, machine, or software component proves they're who or what they claim to be. Then, the person, machine, or software component is allowed or denied access to or use of certain resources.
+
+Here are some fundamental concepts to help you understand identity and access management:
+
+### Identity
+A digital identity is a collection of unique identifiers or attributes that represent a human, software component, machine, asset, or resource in a computer system. An identifier can be:
+
+- An email address
+- Sign-in credentials (username/password)
+- Bank account number
+- Government issued ID
+- MAC address or IP address
+- Identities are used to authenticate and authorize access to resources, communicate with other humans, conduct transactions, and other purposes.
+
+At a high level, there are three types of identities:
+
+- Human identities represent people such as employees (internal workers and front line workers) and external users (customers, consultants, vendors, and partners).
+- Workload identities represent software workloads such as an application, service, script, or container.
+- Device identities represent devices such as desktop computers, mobile phones, IoT sensors, and IoT managed devices. Device identities are distinct from human identities.
+
+### Authentication
+Authentication is the process of challenging a person, software component, or hardware device for credentials in order to verify their identity, or prove they're who or what they claim to be. Authentication typically requires the use of credentials (like username and password, fingerprints, certificates, or one-time passcodes). Authentication is sometimes shortened to AuthN.
+
+Multi-factor authentication (MFA) is a security measure that requires users to provide more than one piece of evidence to verify their identities, such as:
+
+- Something they know, for example a password.
+- Something they have, like a badge or security token.
+- Something they are, like a biometric (fingerprint or face).
+
+Single sign-on (SSO) allows users to authenticate their identity once and then later silently authenticate when accessing various resources that rely on the same identity. Once authenticated, the IAM system acts as the source of identity truth for the other resources available to the user. It removes the need for signing on to multiple, separate target systems.
+
+### Authorization
+Authorization validates that the user, machine, or software component has been granted access to certain resources. Authorization is sometimes shortened to AuthZ.
+
+
+## What does IAM do?
+IAM systems typically provide the following core functionality:
+
+- **Identity management** - The process of creating, storing, and managing identity information. Identity providers (IdP) are software solutions that are used to track and manage user identities, as well as the permissions and access levels associated with those identities.
+
+- **Identity federation** - You can allow users who already have passwords elsewhere (for example, in your enterprise network or with an internet or social identity provider) to get access to your system.
+
+- **Provisioning and deprovisioning of users** - The process of creating and managing user accounts, which includes specifying which users have access to which resources, and assigning permissions and access levels.
+
+- **Authentication of users** - Authenticate a user, machine, or software component by confirming that they're who or what they say they are. You can add multi-factor authentication (MFA) for individual users for extra security or single sign-on (SSO) to allow users to authenticate their identity with one portal instead of many different resources.
+
+- **Authorization of users** - Authorization ensures a user is granted the exact level and type of access to a tool that they're entitled to. Users can also be portioned into groups or roles so large cohorts of users can be granted the same privileges.
+
+- **Access control** - The process of determining who or what has access to which resources. This includes defining user roles and permissions, as well as setting up authentication and authorization mechanisms. Access controls regulate access to systems and data.
+
+- **Reports and monitoring** - Generate reports after actions taken on the platform (like sign-in time, systems accessed, and type of authentication) to ensure compliance and assess security risks. Gain insights into the security and usage patterns of your environment.
+
